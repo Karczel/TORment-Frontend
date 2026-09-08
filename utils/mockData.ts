@@ -1,5 +1,5 @@
 import { Language } from '@/public/mockData/Language';
-import { TORItem, UserProfile, SystemLog, TORRequirement } from '@/types';
+import { TORItem, UserProfile, TORRequirement } from '@/types';
 
 export const initialProfile: Record<Language, UserProfile> = {
     en: {
@@ -171,20 +171,6 @@ export const initialTORs: Record<Language, TORItem[]> = {
     ]
 };
 
-export const initialLogs: Record<Language, SystemLog[]> = {
-    en: [
-        { time: '17:15:02', type: 'SYNC', msg: 'Polled 14 items from Central Public e-GP Portal API (HTTP 200 OK)' },
-        { time: '16:40:11', type: 'VECTOR', msg: "Re-calculated capability vector for tenant 'Thai Tech Solutions Ltd.'" },
-        { time: '15:22:00', type: 'ALERT', msg: 'Dispatched 480 Daily Digest notifications via Email & Webhook' },
-        { time: '12:05:44', type: 'SYNC', msg: 'Polled 6 items from State Railway Bidding API' }
-    ],
-    th: [
-        { time: '17:15:02', type: 'SYNC', msg: 'ดึงข้อมูล 14 รายการจาก Central Public e-GP Portal API (HTTP 200 OK)' },
-        { time: '16:40:11', type: 'VECTOR', msg: "คำนวณเวกเตอร์ความสามารถใหม่สำหรับ 'บริษัท ไทย เทค โซลูชั่นส์ จำกัด'" },
-        { time: '15:22:00', type: 'ALERT', msg: 'ส่งการแจ้งเตือนสรุปรายวัน 480 รายการผ่าน อีเมล & เว็บฮุก' },
-        { time: '12:05:44', type: 'SYNC', msg: 'ดึงข้อมูล 6 รายการจาก State Railway Bidding API' }
-    ]
-};
 
 export const MOCK_TRACKED: TrackedProject[] = [
     {
