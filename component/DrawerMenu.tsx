@@ -160,17 +160,6 @@ export default function DrawerMenu({
                 </Link>
               );
             })}
-
-            <div className="pt-2">
-              <Link 
-                href="/admin" 
-                onClick={() => setIsOpen(false)}
-                className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-bold text-amber-600 dark:text-amber-400 hover:bg-amber-500/10 transition-colors"
-              >
-                <RiShieldCheckLine className="h-5 w-5" />
-                <span>{lang === 'EN' ? 'Admin Portal' : 'ระบบจัดการ'}</span>
-              </Link>
-            </div>
           </div>
 
           {/* Footer Actions */}

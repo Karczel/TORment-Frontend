@@ -56,11 +56,6 @@ export interface FilterState {
     requireCapital: boolean;
 }
 
-export interface SystemLog {
-    time: string;
-    type: 'SYNC' | 'VECTOR' | 'ALERT' | 'CREATE';
-    msg: string;
-}
 
 export interface AppNotification {
   id: string;

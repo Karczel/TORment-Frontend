@@ -69,10 +69,6 @@ export const Navbar: React.FC<NavbarProps> = ({ companyName }) => {
                     <Link href="/search-feed" className="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-[#2D2938] transition-colors">
                         {t('torDirectory')}
                     </Link>
-                    <Link href="/admin" className="px-3 py-1.5 rounded-lg text-amber-600 dark:text-amber-400 hover:bg-amber-500/10 font-bold transition-colors">
-                        ⚙️ {t('adminPortal')}
-                    </Link>
-                    
                 </div>
             </div>
 
